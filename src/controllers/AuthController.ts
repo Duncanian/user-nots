@@ -21,9 +21,6 @@ class AuthController {
         username: registeredUser.username,
       });
 
-      console.log(token);
-      
-
       const message = [201, 'User created successfully', true];
       return res.status(message[0]).json({
         success: message[2],
